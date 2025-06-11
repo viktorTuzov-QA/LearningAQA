@@ -10,7 +10,7 @@ public class ExchangeRate {
     private static final BigDecimal USDtoRUB = new BigDecimal ("75");
      public static BigDecimal convert(BigDecimal amount, Currency from, Currency to)
      {
-         if (from == to) {return amount;};
+         if (from == to) return amount;
 
          switch (from)
          {
